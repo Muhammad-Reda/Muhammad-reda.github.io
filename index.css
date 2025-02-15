@@ -86,11 +86,13 @@ section main a {
     color: aliceblue;
     text-decoration: none;
     font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
 section main a:hover {
     background-color: rgb(255, 255, 255);
     color: #000;
+    border: 2px solid rgb(222, 219, 219); /* Keep the same border color on hover */
 }
 
 footer {
