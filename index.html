@@ -21,6 +21,9 @@
         <title>Redhaha</title>
     </head>
     <body>
+        <audio autoplay preload="auto" loop id="music">
+            <source src="music/cat.mp3" type="audio/mp3" />
+        </audio>
         <div class="background-image"></div>
         <section>
             <main>
@@ -51,4 +54,14 @@
             <p>Redhaha <a href="">🐋</a></p>
         </footer>
     </body>
+    <script>
+        function PlayMusic() {
+            var play = document.getElementById("music");
+            play.play();
+        }
+
+        $(document).ready(function () {
+            setTimeout(PlayMusic, 2000);
+        });
+    </script>
 </html>
